@@ -2,19 +2,29 @@ import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.png';
 import instagramIcon from '../assets/instagram.png';
 import messageboard from '../assets/messageboard.png';
-import mernAuthS from '../assets/mernAuthS.png'
+import mernAuthS from '../assets/mernAuthS.png';
+import studentteacherportalimg from '../assets/student-teacher-portal.png';
+
+
 const portfolioData = {
   projects: [
     
     {
       id: 1,
+      title: 'Student&Teachet portal',
+      description: 'This MERN stack portal features Teacher Login for adding students and creating dynamic exams. Students log in to a Personal Dashboard, take any pending quizzes, and receive Instant Results with their score percentage.',
+      screenshotUrl: studentteacherportalimg,
+      liveUrl: 'https://mern-student-teacher-app-1.onrender.com',
+      technologies: ['Node.js','React', 'Tailwind CSS', 'JWT', 'MongoDB', 'Express']
+    },{
+      id: 2,
       title: 'MERN-Email-authetication',
       description: 'A full-stack email authentication application, login,signUp,Verify using email  authentication using OTP. The backend is powered by Node.js and Express, with a MongoDB database.',
       screenshotUrl: mernAuthS,
       liveUrl: 'https://mern-auth-two-murex.vercel.app/',
       technologies: ['nodemailer','React', 'Brevo', 'JWT', 'MongoDB', 'Express']
     },{
-      id: 2,
+      id: 3,
       title: 'Message Board--MERN',
       description: 'I created a message board any one with the link can post the meaasge. it stores the messages in mongoDb',
       screenshotUrl: messageboard,
