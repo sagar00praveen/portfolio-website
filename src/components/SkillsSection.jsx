@@ -1,37 +1,34 @@
-const SkillsSection = ({ skills }) => (
-  <section id="skills" className="py-24 bg-[#0b1a20] text-white relative">
-    <div className="max-w-6xl mx-auto px-6">
-      {/* Gradient Heading */}
-      <h2 className="text-4xl font-bold text-center mb-16 ">
-        <span className="bg-gradient-to-r from-teal-400 via-cyan-400 to-white bg-clip-text text-transparent">
-          Technologies & Skills
-        </span>
-      </h2>
+import { motion } from "framer-motion";
 
-      {/* Skills Grid */}
-      <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14">
-        {skills.map((skill) => (
-          <div
-            key={skill.name}
-            className="flex flex-col items-center group cursor-pointer"
-          >
-            {/* Glass/Mica Icon Container */}
-            <div className="w-16 h-16 md:w-20 md:h-20 p-2 bg-white/5 backdrop-blur-lg rounded-full flex items-center justify-center shadow-lg shadow-cyan-500/20 hover:shadow-[0_0_25px_rgba(0,255,255,0.5)] transition-all duration-300">
+const SkillsSection = ({ skills }) => {
+  return (
+    <section id="skills" className="py-24 overflow-hidden relative z-10">
+      <h2 className="text-center text-3xl font-semibold mb-16 tracking-tight">Tools & Technologies</h2>
+
+      <div className="relative flex overflow-x-hidden group">
+        <motion.div
+          className="flex gap-12 whitespace-nowrap"
+          animate={{ x: [0, -1000] }}
+          transition={{
+            repeat: Infinity,
+            duration: 30,
+            ease: "linear",
+          }}
+        >
+          {[...skills, ...skills, ...skills].map((skill, index) => (
+            <div key={`${skill.name}-${index}`} className="flex flex-col items-center gap-4 min-w-[120px] p-6 bg-white/5 rounded-2xl border border-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors">
               <img
                 src={skill.icon}
                 alt={skill.name}
-                className="object-contain w-12 h-12 md:w-14 md:h-14 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-110"
+                className="w-12 h-12 object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
               />
+              <span className="text-sm font-medium text-gray-400">{skill.name}</span>
             </div>
-            {/* Skill Name */}
-            <span className="mt-3 text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              {skill.name}
-            </span>
-          </div>
-        ))}
+          ))}
+        </motion.div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default SkillsSection;

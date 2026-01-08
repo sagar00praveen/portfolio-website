@@ -8,22 +8,22 @@ import studentteacherportalimg from '../assets/student-teacher-portal.png';
 
 const portfolioData = {
   projects: [
-    
+
     {
       id: 1,
       title: 'Student&Teachet portal',
       description: 'This MERN stack portal features Teacher Login for adding students and creating dynamic exams. Students log in to a Personal Dashboard, take any pending quizzes, and receive Instant Results with their score percentage.',
       screenshotUrl: studentteacherportalimg,
       liveUrl: 'https://mern-student-teacher-app-1.onrender.com',
-      technologies: ['Node.js','React', 'Tailwind CSS', 'JWT', 'MongoDB', 'Express']
-    },{
+      technologies: ['Node.js', 'React', 'Tailwind CSS', 'JWT', 'MongoDB', 'Express']
+    }, {
       id: 2,
       title: 'MERN-Email-authetication',
       description: 'A full-stack email authentication application, login,signUp,Verify using email  authentication using OTP. The backend is powered by Node.js and Express, with a MongoDB database.',
       screenshotUrl: mernAuthS,
       liveUrl: 'https://mern-auth-two-murex.vercel.app/',
-      technologies: ['nodemailer','React', 'Brevo', 'JWT', 'MongoDB', 'Express']
-    },{
+      technologies: ['nodemailer', 'React', 'Brevo', 'JWT', 'MongoDB', 'Express']
+    }, {
       id: 3,
       title: 'Message Board--MERN',
       description: 'I created a message board any one with the link can post the meaasge. it stores the messages in mongoDb',
@@ -31,7 +31,7 @@ const portfolioData = {
       liveUrl: 'https://mern-message-board.vercel.app/',
       technologies: ['React', 'Tailwind CSS', 'MongoDb', 'Git']
     },
-   
+
   ],
   skills: [
     { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
@@ -50,6 +50,41 @@ const portfolioData = {
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/sagar-praveen', icon: linkedinIcon },
     { name: 'Instagram', url: 'https://instagram.com/___sagar_sagar__', icon: instagramIcon },
   ],
+  personalInfo: {
+    name: "Sagar Praveen",
+    phone: "8978539071",
+    email: "sagar.y.praveen@gmail.com",
+    education: {
+      degree: "B.Tech in Computer Science and Engineering",
+      year: "2022 - 2026",
+      college: "NRI Institute of Technology",
+      location: "Pothavarappadu, Krishna, Andhra Pradesh"
+    }
+  },
+  internships: [
+    {
+      company: "CODEGNAN IT SOLUTIONS PVT LTD (APSCHE)",
+      role: "Intern", // Assuming generic intern role, user didn't specify exact title other than company
+      link: "https://drive.google.com/file/d/16n3rmsIrj2nqI2ZrxwhTiUbVWgf6rDqc/view?usp=sharing"
+    },
+    {
+      company: "CodSoft",
+      role: "Web Development Intern",
+      link: "https://drive.google.com/file/d/1EinJrSJRyMwdQgAmUal1-gA1x0tdihno/view?usp=sharing"
+    }
+  ],
+  certifications: [
+    {
+      name: "JavaScript Algorithms and Data Structures",
+      issuer: "freeCodeCamp",
+      link: "https://www.freecodecamp.org/certification/sagar_praveen/javascript-algorithms-and-data-structures-v8"
+    },
+    {
+      name: "Responsive Web Design",
+      issuer: "freeCodeCamp",
+      link: "https://www.freecodecamp.org/certification/sagar_praveen/responsive-web-design"
+    }
+  ]
 };
 
 
