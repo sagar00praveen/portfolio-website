@@ -13,7 +13,7 @@ const ProjectDetailView = ({ project, onBack }) => {
   if (!project) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6" onClick={onBack}>
+    <div className="fixed inset-0 z-[70] flex items-center justify-center p-4 sm:p-6" onClick={onBack}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

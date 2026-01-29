@@ -54,9 +54,13 @@ const ContactSection = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 bg-white/5 rounded-full hover:bg-white/20 transition-all hover:scale-110"
+                  className="p-3 bg-white/5 rounded-full hover:bg-white/20 transition-all hover:scale-110 group"
                 >
-                  <img src={social.icon} alt={social.name} className="w-5 h-5 invert opacity-80" />
+                  <img
+                    src={social.icon}
+                    alt={social.name}
+                    className="w-5 h-5 brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                  />
                 </a>
               ))}
             </div>

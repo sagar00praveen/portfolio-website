@@ -4,6 +4,8 @@ import instagramIcon from '../assets/instagram.png';
 import messageboard from '../assets/messageboard.png';
 import mernAuthS from '../assets/mernAuthS.png';
 import studentteacherportalimg from '../assets/student-teacher-portal.png';
+import jewelryWebsiteImg from '../assets/jewelry-website.png';
+import lokachakraImg from '../assets/lokachakra.png';
 
 
 const portfolioData = {
@@ -31,6 +33,22 @@ const portfolioData = {
       liveUrl: 'https://mern-message-board.vercel.app/',
       technologies: ['React', 'Tailwind CSS', 'MongoDb', 'Git']
     },
+    {
+      id: 4,
+      title: 'ISHAANI - Jewelry E-commerce',
+      description: 'A modern, full-stack jewelry e-commerce platform. Features include a responsive design with Tailwind CSS, animated UI with Framer Motion, secure user authentication (JWT), product management, and a functional shopping cart. The backend is powered by Node.js and Express with MongoDB.',
+      screenshotUrl: jewelryWebsiteImg,
+      liveUrl: 'https://jewelry-website-sepia.vercel.app/',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Framer Motion', 'JWT']
+    },
+    {
+      id: 5,
+      title: 'Lokachakra - Blockchain Verification',
+      description: 'A decentralized application (DApp) for document verification on the Solana blockchain. Users can upload documents to mint proofs, ensuring immutability and authenticity. Integrates Supabase for metadata and Phantom Wallet for transactions.',
+      screenshotUrl: lokachakraImg,
+      liveUrl: 'https://lokachakra-superbase-blockchain.vercel.app/',
+      technologies: ['React', 'Solana (Devnet)', 'Anchor', 'Rust', 'Supabase', 'Tailwind CSS', 'Phantom Wallet']
+    }
 
   ],
   skills: [
@@ -64,7 +82,7 @@ const portfolioData = {
   internships: [
     {
       company: "CODEGNAN IT SOLUTIONS PVT LTD (APSCHE)",
-      role: "Intern", // Assuming generic intern role, user didn't specify exact title other than company
+      role: "Intern",
       link: "https://drive.google.com/file/d/16n3rmsIrj2nqI2ZrxwhTiUbVWgf6rDqc/view?usp=sharing"
     },
     {

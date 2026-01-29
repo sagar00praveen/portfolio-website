@@ -19,16 +19,7 @@ const Header = () => {
           Sagar.
         </h1>
 
-        <nav className="space-x-8 hidden md:flex items-center">
-          <a href="#about" className="text-sm text-gray-300 hover:text-white transition-colors duration-300 font-medium">
-            About
-          </a>
-          <a href="#projects" className="text-sm text-gray-300 hover:text-white transition-colors duration-300 font-medium">
-            Work
-          </a>
-          <a href="#skills" className="text-sm text-gray-300 hover:text-white transition-colors duration-300 font-medium">
-            Skills
-          </a>
+        <nav className="flex items-center">
           <a href="#contact" className="px-4 py-2 bg-white text-black text-sm font-semibold rounded-full hover:scale-105 transition-transform">
             Let's Talk
           </a>
